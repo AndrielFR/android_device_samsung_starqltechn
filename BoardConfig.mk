@@ -1,6 +1,11 @@
+#
+# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2020 AOSPK
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-
-# Inherit from samsung sdm845-common
+# Inherit from sdm845-common
 -include device/samsung/sdm845-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/starqltechn

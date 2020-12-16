@@ -1,8 +1,14 @@
+#
+# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2020 AOSPK
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Inherit common device configuration
-$(call inherit-product, device/samsung/sdm845-common/common.mk)
+# Inherit from sdm845-common
+$(call inherit-product, device/samsung/sdm845-common/sdm845.mk)
 
